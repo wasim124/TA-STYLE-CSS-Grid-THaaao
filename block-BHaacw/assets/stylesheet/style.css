@@ -1,0 +1,278 @@
+/**var**/ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**general**/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5;
+  color: rgb(147, 160, 189);
+  font-size: 1.4rem;
+  background-color: rgb(58, 74, 79);
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 6rem 0;
+}
+
+.width-full {
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/*flex*/
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/*text*/
+.text-center {
+  text-align: center;
+}
+
+.card-item {
+  background-color: rgb(255, 255, 255);
+  border-top: 5px solid rgb(0, 149, 190);
+  color: rgb(89, 91, 83);
+}
+.card-item h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+.card-item p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+.card-item a {
+  color: rgb(252, 46, 27);
+  padding-left: 0.5rem;
+}
+
+.navbar {
+  grid-column: 1/-1;
+}
+.navbar .nav a {
+  color: rgb(0, 149, 190);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-2 {
+  grid-row: span 3;
+}
+.card-2 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 1.2rem 2.6rem;
+}
+
+.card-3 a {
+  background-color: rgb(252, 46, 27);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 16.65rem 0.5rem 0.5rem;
+}
+
+.card-4 {
+  grid-row: span 2;
+}
+.card-4 img {
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem 8rem;
+}
+
+.card-5 h2 {
+  background-color: rgb(0, 149, 190);
+  color: rgb(255, 255, 255);
+}
+
+.card-layout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 400px);
+}/*# sourceMappingURL=style.css.map */

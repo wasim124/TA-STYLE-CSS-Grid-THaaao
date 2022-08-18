@@ -1,0 +1,54 @@
+/**general**/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font;
+  line-height: 1.5;
+  color: $textLight;
+  font-size: 1.4rem;
+  background-color: $bg;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 6rem 0;
+}
+
+.width-full{
+  width: 100%;
+  height: auto;
+}
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $textWhite;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
