@@ -1,0 +1,425 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**general**/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: rgb(147, 160, 189);
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 6rem 2rem;
+}
+
+.width-full {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+/*button*/
+.btn {
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  background-color: rgb(245, 227, 215);
+  color: rgb(88, 92, 100);
+  border: 3px solid rgb(22, 22, 22);
+  border-radius: 6rem;
+  transition: all 200ms ease-in-out;
+}
+
+.heading {
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: rgb(88, 92, 100);
+  margin-bottom: 1rem;
+}
+
+/*flex*/
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.item-start {
+  align-items: flex-start;
+}
+
+.item-stretch {
+  align-items: stretch;
+}
+
+.item-center {
+  align-items: center;
+}
+
+/**grid**/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-col1 {
+  grid-column: span 2;
+  font-size: 0;
+}
+
+.hero-col2 {
+  padding: 1.2rem;
+  grid-column: span 2;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  margin-bottom: 10rem;
+}
+
+.col-1 {
+  grid-column: span 2;
+  height: 25rem;
+}
+
+/**header**/
+.navbar {
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.brand {
+  font-size: 2rem;
+  color: rgb(22, 22, 22);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-shadow: 1px 1px rgb(236, 175, 78);
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+.nav-item .active {
+  color: rgb(236, 175, 78);
+}
+.nav-item :hover {
+  color: rgb(236, 175, 78);
+}
+
+.nav a {
+  color: rgb(88, 92, 100);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/**hero**/
+.hero {
+  background-color: rgb(245, 227, 215);
+}
+.hero strong {
+  font-weight: 700;
+}
+.hero h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.hero img {
+  height: 100%;
+}
+
+/**skill**/
+.col-skill {
+  padding: 2.5rem;
+}
+.col-skill h3 {
+  color: rgb(236, 175, 78);
+  margin: 1rem 0;
+}
+
+.progress {
+  padding: 1rem 2rem 0 2rem;
+  background-color: rgb(236, 175, 78);
+}
+.progress p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+.progress h1 {
+  color: #ffffff;
+}
+
+.progress-items h3 {
+  color: black;
+  font-weight: 500;
+}
+.progress-items h3 p {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+progress {
+  font-size: 0;
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ffffff;
+}
+
+progress::-webkit-progress-value {
+  background-color: black;
+}
+
+/**about**/
+.about-item {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+.about-item i {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.about-item h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-item p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.bg-1 {
+  background-color: rgb(236, 175, 78);
+}
+
+.bg-2 {
+  background-color: rgb(252, 104, 62);
+}
+
+.bg-3 {
+  background-color: rgb(22, 22, 22);
+}
+
+.bg-4 {
+  background-color: none;
+  color: rgb(22, 22, 22);
+}
+
+/**experiences**/
+.card-exp {
+  padding: 4rem;
+  color: #ffffff;
+}
+.card-exp h1 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+.card-exp h5 {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.card-exp i {
+  font-size: 2rem;
+  margin-right: 1.3rem;
+}
+.card-exp h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+.card-exp strong {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #713234;
+}
+.card-exp p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */
